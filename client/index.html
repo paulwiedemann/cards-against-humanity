@@ -32,6 +32,7 @@
 
     socket.on('gameCreated', ({ gameId }) => {
       document.getElementById('status').innerText = `Spiel erstellt! Dein Code: ${gameId}`;
+      alert ("Deine Spiel ID ist"+gameId);
     });
 
     function joinGame() {
